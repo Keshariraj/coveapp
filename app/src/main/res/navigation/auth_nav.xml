@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.digi.coveapp.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_choiceFragment"
+            app:destination="@id/choiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/choiceFragment"
+        android:name="com.digi.coveapp.ChoiceFragment"
+        android:label="fragment_choice"
+        tools:layout="@layout/fragment_choice" >
+        <action
+            android:id="@+id/action_choiceFragment_to_organiserSiginFragment"
+            app:destination="@id/organiserSiginFragment" />
+        <action
+            android:id="@+id/action_choiceFragment_to_viewerSiginFragment"
+            app:destination="@id/viewerSiginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/organiserSiginFragment"
+        android:name="com.digi.coveapp.OrganiserSiginFragment"
+        android:label="fragment_organiser_sigin"
+        tools:layout="@layout/fragment_organiser_sigin" >
+        <action
+            android:id="@+id/action_organiserSiginFragment_to_organiserRegisterFragment"
+            app:destination="@id/organiserRegisterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/organiserRegisterFragment"
+        android:name="com.digi.coveapp.OrganiserRegisterFragment"
+        android:label="fragment_organiser_register"
+        tools:layout="@layout/fragment_organiser_register" />
+    <fragment
+        android:id="@+id/viewerSiginFragment"
+        android:name="com.digi.coveapp.ViewerSiginFragment"
+        android:label="fragment_viewer_sigin"
+        tools:layout="@layout/fragment_viewer_sigin" />
+</navigation>
