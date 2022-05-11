@@ -44,5 +44,23 @@
         android:id="@+id/viewerSiginFragment"
         android:name="com.digi.coveapp.ViewerSiginFragment"
         android:label="fragment_viewer_sigin"
-        tools:layout="@layout/fragment_viewer_sigin" />
+        tools:layout="@layout/fragment_viewer_sigin" >
+        <action
+            android:id="@+id/action_viewerSiginFragment_to_otpVerificationFragment"
+            app:destination="@id/otpVerificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpVerificationFragment"
+        android:name="com.digi.coveapp.OtpVerificationFragment"
+        android:label="fragment_otp_verification"
+        tools:layout="@layout/fragment_otp_verification" >
+        <action
+            android:id="@+id/action_otpVerificationFragment_to_viewerProfileFragment"
+            app:destination="@id/viewerProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewerProfileFragment"
+        android:name="com.digi.coveapp.ViewerProfileFragment"
+        android:label="fragment_viewer_profile"
+        tools:layout="@layout/fragment_viewer_profile" />
 </navigation>
