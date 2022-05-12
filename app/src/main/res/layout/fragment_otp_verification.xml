@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradiant"
     tools:context=".OtpVerificationFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -37,10 +38,10 @@
 
     <Button
         android:id="@+id/verify_otp_Button"
-        android:layout_width="300dp"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_marginTop="36dp"
-        android:backgroundTint="#6d5cff"
+        android:backgroundTint="#FF6363"
         android:text="Verify "
         android:textColor="@color/white"
         android:textSize="20sp"

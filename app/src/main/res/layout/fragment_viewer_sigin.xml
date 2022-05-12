@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
+    android:background="@drawable/gradiant"
     android:layout_height="match_parent"
     tools:context=".ViewerSiginFragment">
 
@@ -33,6 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:backgroundTint="#F8B400"
         android:text="Generate OTP"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
