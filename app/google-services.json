@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "833134460175",
+    "project_id": "coveapp-cp9",
+    "storage_bucket": "coveapp-cp9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833134460175:android:6f638fe9aae96d8810d27a",
+        "android_client_info": {
+          "package_name": "com.digi.coveapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833134460175-f4bs3qbl3v9bolrc0i0kc2mlkethl21v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.digi.coveapp",
+            "certificate_hash": "8c4279d97d2b38fc44c2609cb647919644604f87"
+          }
+        },
+        {
+          "client_id": "833134460175-3gd4vfrickqpsics1n5edkj1e5o2pohb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgDJR8SLx6tNDCDZRP7B8JL7gqqTiM7cM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833134460175-3gd4vfrickqpsics1n5edkj1e5o2pohb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

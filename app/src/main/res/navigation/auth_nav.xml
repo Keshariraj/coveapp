@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.digi.coveapp.SplashFragment"
+        android:name="com.digi.coveapp.ui.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/choiceFragment"
-        android:name="com.digi.coveapp.ChoiceFragment"
+        android:name="com.digi.coveapp.ui.ChoiceFragment"
         android:label="fragment_choice"
         tools:layout="@layout/fragment_choice" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/organiserSiginFragment"
-        android:name="com.digi.coveapp.OrganiserSiginFragment"
+        android:name="com.digi.coveapp.ui.OrganiserSiginFragment"
         android:label="fragment_organiser_sigin"
         tools:layout="@layout/fragment_organiser_sigin" >
         <action
@@ -37,12 +37,12 @@
     </fragment>
     <fragment
         android:id="@+id/organiserRegisterFragment"
-        android:name="com.digi.coveapp.OrganiserRegisterFragment"
+        android:name="com.digi.coveapp.ui.OrganiserRegisterFragment"
         android:label="fragment_organiser_register"
         tools:layout="@layout/fragment_organiser_register" />
     <fragment
         android:id="@+id/viewerSiginFragment"
-        android:name="com.digi.coveapp.ViewerSiginFragment"
+        android:name="com.digi.coveapp.ui.ViewerSignInFragment"
         android:label="fragment_viewer_sigin"
         tools:layout="@layout/fragment_viewer_sigin" >
         <action
@@ -51,7 +51,7 @@
     </fragment>
     <fragment
         android:id="@+id/otpVerificationFragment"
-        android:name="com.digi.coveapp.OtpVerificationFragment"
+        android:name="com.digi.coveapp.ui.OtpVerificationFragment"
         android:label="fragment_otp_verification"
         tools:layout="@layout/fragment_otp_verification" >
         <action
@@ -60,7 +60,7 @@
     </fragment>
     <fragment
         android:id="@+id/viewerProfileFragment"
-        android:name="com.digi.coveapp.ViewerProfileFragment"
+        android:name="com.digi.coveapp.ui.ViewerProfileFragment"
         android:label="fragment_viewer_profile"
         tools:layout="@layout/fragment_viewer_profile" />
 </navigation>
