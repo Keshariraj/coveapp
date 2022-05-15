@@ -7,7 +7,7 @@
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/drawable/ic_menu_camera.xml" value="0.2265" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/drawable/person.xml" value="0.2265" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/activity_auth.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/activity_main.xml" value="0.22282608695652173" />
+        <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/activity_main.xml" value="0.2115036231884058" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_choice.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_organiser_register.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_organiser_sigin.xml" value="0.25416666666666665" />
@@ -15,6 +15,7 @@
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_splash.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_viewer_profile.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_viewer_sigin.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

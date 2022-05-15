@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.digi.coveapp.R
 import com.digi.coveapp.databinding.FragmentDashboardBinding
 import com.digi.coveapp.databinding.FragmentViewerSiginBinding
 import com.google.android.gms.auth.api.identity.BeginSignInRequest
@@ -18,7 +20,7 @@ import com.google.firebase.ktx.Firebase
 import java.util.concurrent.TimeUnit
 
 
-class ViewerSignInFragment(phoneNumber: String) : Fragment() {
+class ViewerSignInFragment : Fragment() {
     private lateinit var auth: FirebaseAuth
     private lateinit var db: FirebaseFirestore
     private lateinit var signInRequest: BeginSignInRequest
@@ -39,20 +41,7 @@ class ViewerSignInFragment(phoneNumber: String) : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-    }
-    val options = PhoneAuthOptions.newBuilder(auth)
-        .setPhoneNumber(phoneNumber)       // Phone number to verify
-        .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
-        .setActivity(requireActivity())                 // Activity (for callback binding)
-        .setCallbacks(callbacks)          // OnVerificationStateChangedCallbacks
-        .build()
-    override fun onStart() {
-        super.onStart()
-        updateUI(auth.currentUser)
-    }
-
-    fun updateUI(user: FirebaseUser?) {
-
+        binding.generateOtpButton.setOnClickListener { findNavController().navigate(R.id.action_viewerSiginFragment_to_otpVerificationFragment) }
     }
 
     override fun onDestroyView() {
