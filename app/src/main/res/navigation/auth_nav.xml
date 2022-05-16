@@ -34,7 +34,7 @@
         android:label="fragment_organiser_sigin"
         tools:layout="@layout/fragment_organiser_sigin" >
         <action
-            android:id="@+id/action_organiserSiginFragment_to_organiserRegisterFragment"
+            android:id="@+id/action_organiserSiginFragment_to_organiserRegisterFragment2"
             app:destination="@id/organiserRegisterFragment" />
     </fragment>
     <fragment
