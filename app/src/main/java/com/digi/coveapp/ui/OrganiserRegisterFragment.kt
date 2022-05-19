@@ -38,7 +38,7 @@ class OrganiserRegisterFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.signinTextview.setOnClickListener {
+        binding.nextButton.setOnClickListener {
             val email = binding.editEmail.text.toString().trim()
             val password = binding.editPass.text.toString().trim()
             val password2 = binding.editCPass.text.toString().trim()
@@ -52,11 +52,9 @@ class OrganiserRegisterFragment : Fragment() {
                     startActivity(i)
                     requireActivity().finish()
                 }.addOnFailureListener {
-                    // todo add some error message
                     Snackbar.make(binding.root, it.message.toString(), Snackbar.LENGTH_LONG).show()
                 }
             } catch (e: Exception) {
-                // todo add some error message
                 Snackbar.make(binding.root, e.message.toString(), Snackbar.LENGTH_LONG).show()
             }
         }
