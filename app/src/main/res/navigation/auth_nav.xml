@@ -55,7 +55,11 @@
         android:id="@+id/otpVerificationFragment"
         android:name="com.digi.coveapp.ui.OtpVerificationFragment"
         android:label="fragment_otp_verification"
-        tools:layout="@layout/fragment_otp_verification" />
+        tools:layout="@layout/fragment_otp_verification" >
+        <argument
+            android:name="storedVerificationId"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/viewerProfileFragment"
         android:name="com.digi.coveapp.ui.ViewerProfileFragment"

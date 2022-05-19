@@ -1,29 +1,27 @@
 package com.digi.coveapp.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.digi.coveapp.R
-import com.digi.coveapp.databinding.FragmentDashboardBinding
+import com.digi.coveapp.MainActivity
 import com.digi.coveapp.databinding.FragmentViewerSiginBinding
-import com.google.android.gms.auth.api.identity.BeginSignInRequest
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.auth.PhoneAuthOptions
+import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.FirebaseException
+import com.google.firebase.FirebaseTooManyRequestsException
+import com.google.firebase.auth.*
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import java.util.concurrent.TimeUnit
 
-
 class ViewerSignInFragment : Fragment() {
+
     private lateinit var auth: FirebaseAuth
-    private lateinit var db: FirebaseFirestore
-    private lateinit var signInRequest: BeginSignInRequest
+    private lateinit var storedVerificationId: String
+    private lateinit var resendToken: PhoneAuthProvider.ForceResendingToken
 
     private var _binding: FragmentViewerSiginBinding? = null
     private val binding get() = _binding!!
@@ -34,14 +32,86 @@ class ViewerSignInFragment : Fragment() {
     ): View {
         _binding = FragmentViewerSiginBinding.inflate(inflater, container, false)
         auth = Firebase.auth
-        db = Firebase.firestore
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.generateOtpButton.setOnClickListener { findNavController().navigate(R.id.action_viewerSiginFragment_to_otpVerificationFragment) }
+        binding.generateOtpButton.setOnClickListener {
+            val phone = binding.phoneNumberTextField.editText?.text.toString()
+            if (phone.length == 10) {
+                startPhoneNumberVerification("+91$phone")
+            } else {
+                Snackbar.make(
+                    binding.root,
+                    "Please enter correct phone number.",
+                    Snackbar.LENGTH_SHORT
+                ).show()
+            }
+        }
+    }
+
+    private fun startPhoneNumberVerification(phoneNumber: String) {
+        auth.useAppLanguage()
+
+        val options = PhoneAuthOptions.newBuilder(auth)
+            .setPhoneNumber(phoneNumber)       // Phone number to verify
+            .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
+            .setActivity(requireActivity())                 // Activity (for callback binding)
+            .setCallbacks(object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
+                override fun onVerificationCompleted(credential: PhoneAuthCredential) {
+                    updateUI(auth.currentUser)
+                }
+
+                override fun onVerificationFailed(e: FirebaseException) {
+                    when (e) {
+                        is FirebaseAuthInvalidCredentialsException -> Snackbar.make(
+                            binding.root,
+                            "Firebase auth is invalid.",
+                            Snackbar.LENGTH_SHORT
+                        ).show()
+                        is FirebaseTooManyRequestsException -> Snackbar.make(
+                            binding.root,
+                            "Too many requests, try later.",
+                            Snackbar.LENGTH_SHORT
+                        ).show()
+                        else -> Snackbar.make(
+                            binding.root,
+                            "Failed to send the OTP ${e.message.toString()}",
+                            Snackbar.LENGTH_SHORT
+                        ).show()
+                    }
+                }
+
+                override fun onCodeSent(
+                    verificationId: String,
+                    token: PhoneAuthProvider.ForceResendingToken
+                ) {
+                    storedVerificationId = verificationId
+                    resendToken = token
+                    val direction =
+                        ViewerSignInFragmentDirections.actionViewerSiginFragmentToOtpVerificationFragment(
+                            verificationId
+                        )
+                    findNavController().navigate(direction)
+                }
+            })
+            .build()
+        PhoneAuthProvider.verifyPhoneNumber(options)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        updateUI(auth.currentUser)
+    }
+
+    fun updateUI(currentUser: FirebaseUser?) {
+        if (currentUser != null) {
+            val intent = Intent(requireActivity(), MainActivity::class.java)
+            startActivity(intent)
+            requireActivity().finish()
+        }
     }
 
     override fun onDestroyView() {
@@ -49,3 +119,5 @@ class ViewerSignInFragment : Fragment() {
         _binding = null
     }
 }
+
+
