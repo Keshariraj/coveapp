@@ -39,12 +39,12 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/profile_name"
+                    android:id="@+id/Event_name"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
-                    android:text="Enter Name"
+                    android:text="Event Name"
                     android:textColor="#FAFDFD"
                     android:textSize="34sp"
                     app:layout_constraintBottom_toBottomOf="@id/profile_image"
@@ -61,20 +61,20 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:importantForAccessibility="no"
-            app:layout_constraintBottom_toBottomOf="@id/profile_username"
+            app:layout_constraintBottom_toBottomOf="@id/Location"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/profile_username"
+            app:layout_constraintTop_toTopOf="@id/Location"
             app:srcCompat="@drawable/person" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/profile_username"
+            android:id="@+id/Location"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
-            android:hint="USERNAME"
+            android:hint="LOCATION"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/username_icon"
             app:layout_constraintTop_toBottomOf="@id/card_view">
@@ -82,7 +82,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:focusable="false"/>
+                android:focusable="false" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -92,23 +92,23 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:importantForAccessibility="no"
-            app:layout_constraintBottom_toBottomOf="@id/profile_email"
+            app:layout_constraintBottom_toBottomOf="@id/Price"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/profile_email"
+            app:layout_constraintTop_toTopOf="@id/Price"
             app:srcCompat="@drawable/ic_baseline_email_24" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/profile_email"
+            android:id="@+id/Price"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
-            android:hint="EMAIL"
+            android:hint="PRICE"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/email_icon"
-            app:layout_constraintTop_toBottomOf="@id/profile_username">
+            app:layout_constraintTop_toBottomOf="@id/Location">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -123,25 +123,25 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:importantForAccessibility="no"
-            app:layout_constraintBottom_toBottomOf="@id/profile_birthday"
+            app:layout_constraintBottom_toBottomOf="@id/Date"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/profile_birthday"
+            app:layout_constraintTop_toTopOf="@id/Date"
             app:srcCompat="@drawable/ic_baseline_cake_24" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/profile_birthday"
+            android:id="@+id/Date"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
-            android:hint="DATE OF BIRTH"
+            android:hint="DATE "
             app:endIconDrawable="@drawable/ic_baseline_calendar_today_24"
             app:endIconMode="custom"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/dob_icon"
-            app:layout_constraintTop_toBottomOf="@id/profile_email">
+            app:layout_constraintTop_toBottomOf="@id/Price">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -172,7 +172,7 @@
             android:hint="GENDER"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/gender_icon"
-            app:layout_constraintTop_toBottomOf="@id/profile_birthday"
+            app:layout_constraintTop_toBottomOf="@id/Date"
             tools:ignore="MissingConstraints">
 
             <AutoCompleteTextView
@@ -202,12 +202,13 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
-            android:hint="BIO"
+            android:hint="SUMMARY"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/bio_icon"
             app:layout_constraintTop_toBottomOf="@id/gender_menu">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Summary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left|top"
@@ -218,13 +219,13 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/saveButton"
+            android:id="@+id/SubmitButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#FF6363"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
-            android:text="SAVE"
+            android:backgroundTint="#FF6363"
+            android:text="SUBMIT"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
