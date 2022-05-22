@@ -6,27 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".FirstFragment">
 
-    <Button
-        android:id="@+id/LogoutButton"
-        android:layout_width="140dp"
-        android:layout_height="53dp"
-        android:text="Logout"
-        android:backgroundTint="#FF6363"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="662dp" />
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="378dp"
-        android:layout_height="407dp"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="9dp"/>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="376dp"
-        android:layout_height="170dp"
+        android:layout_width="383dp"
+        android:layout_height="730dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="false"
+        android:clipChildren="false"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="437dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:listitem="@layout/event" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
