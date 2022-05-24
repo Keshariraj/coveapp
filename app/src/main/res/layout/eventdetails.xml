@@ -44,6 +44,7 @@
         android:layout_width="162dp"
         android:layout_height="47dp"
         android:layout_marginStart="41dp"
+        android:layout_marginTop="16dp"
         android:background="#00BCD4"
         android:ems="10"
         android:inputType="textPersonName"
@@ -52,9 +53,10 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintHorizontal_bias="0.303"
         app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
-        tools:layout_editor_absoluteY="332dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editTicket"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editAbout"
@@ -71,7 +73,8 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editText"
@@ -79,7 +82,7 @@
         android:layout_width="162dp"
         android:layout_height="47dp"
         android:layout_marginStart="41dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="32dp"
         android:background="#00BCD4"
         android:ems="10"
         android:inputType="textPersonName"
@@ -88,8 +91,10 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.206"
         app:layout_constraintStart_toEndOf="@+id/editAbout"
-        app:layout_constraintTop_toBottomOf="@+id/editfun" />
+        app:layout_constraintTop_toBottomOf="@+id/editfun"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editText2"
@@ -106,7 +111,8 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editAbout" />
+        app:layout_constraintTop_toBottomOf="@+id/editAbout"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
@@ -122,8 +128,10 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.233"
         app:layout_constraintStart_toEndOf="@+id/editText2"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
@@ -139,13 +147,15 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTicket"
         style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
         android:layout_width="366dp"
         android:layout_height="55dp"
+        android:layout_marginTop="24dp"
         android:background="#0ECCE4"
         android:ems="10"
         android:inputType="textPersonName"
@@ -153,12 +163,13 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="258dp" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="405dp"
-        android:layout_height="75dp"
+        android:layout_width="399dp"
+        android:layout_height="61dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="parent"

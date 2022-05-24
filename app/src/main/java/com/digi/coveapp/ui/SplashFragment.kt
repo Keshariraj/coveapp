@@ -31,7 +31,7 @@ class SplashFragment : Fragment() {
             findNavController().navigate(R.id.action_splashFragment_to_choiceFragment)
         }, 2000)
 
-        Glide.with(requireActivity()).load(R.drawable.conference).into(binding.imageView);
+        Glide.with(requireActivity()).load(R.drawable.conference).into(binding.imageView5);
     }
 
 }
