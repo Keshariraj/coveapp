@@ -32,14 +32,13 @@
         android:id="@+id/textView"
         android:layout_width="267dp"
         android:layout_height="75dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="32dp"
         android:text="Convention"
         android:textAlignment="center"
         android:textColor="#125B50"
         android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView" />
 

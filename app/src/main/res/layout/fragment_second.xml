@@ -29,7 +29,7 @@
 
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/editImageBanner"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/proj3" />
@@ -46,13 +46,16 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             android:hint="Event Name"
+            android:textColorHint="@color/black"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintEnd_toEndOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editEventName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:focusable="false" />
+                android:focusable="auto"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -60,6 +63,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
@@ -70,13 +74,15 @@
                 android:id="@+id/editLocation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:focusable="false" />
+                android:focusable="auto"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="350dp"
+            android:textColorHint="@color/black"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
@@ -88,7 +94,8 @@
                 android:id="@+id/editPrice"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:focusable="false" />
+                android:focusable="auto"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -97,6 +104,7 @@
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
+            android:textColorHint="@color/black"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             android:hint="Date"
@@ -106,13 +114,15 @@
                 android:id="@+id/editDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:focusable="false" />
+                android:focusable="auto"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="350dp"
+            android:textColorHint="@color/black"
             android:layout_height="120dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
@@ -124,7 +134,8 @@
                 android:id="@+id/editSummary"
                 android:layout_width="match_parent"
                 android:layout_height="110dp"
-                android:focusable="false" />
+                android:focusable="auto"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -142,35 +153,29 @@
 
             <ImageView
                 android:id="@+id/editimg2"
-                android:layout_width="65dp"
+                android:layout_width="100dp"
                 android:layout_height="65dp"
                 android:layout_marginLeft="4dp"
                 app:srcCompat="@drawable/ic_baseline_snippet_folder_24" />
 
             <ImageView
                 android:id="@+id/editimg3"
-                android:layout_width="65dp"
+                android:layout_width="100dp"
                 android:layout_height="65dp"
                 android:layout_marginLeft="4dp"
                 app:srcCompat="@drawable/ic_baseline_snippet_folder_24" />
 
             <ImageView
                 android:id="@+id/editimg4"
-                android:layout_width="65dp"
+                android:layout_width="100dp"
                 android:layout_height="65dp"
                 android:layout_marginLeft="4dp"
                 app:srcCompat="@drawable/ic_baseline_snippet_folder_24" />
 
-            <ImageView
-                android:id="@+id/editimg5"
-                android:layout_width="99dp"
-                android:layout_height="65dp"
-                android:layout_marginLeft="4dp"
-                app:srcCompat="@drawable/ic_baseline_snippet_folder_24" />
         </LinearLayout>
 
         <Button
-            android:id="@+id/editSubmit"
+            android:id="@+id/btnSubmit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="14dp"
@@ -178,6 +183,7 @@
             android:layout_marginBottom="16dp"
             android:backgroundTint="#FF6363"
             android:text="SUBMIT"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
