@@ -40,17 +40,21 @@
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/drawable/ic_menu_camera.xml" value="0.2265" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/drawable/person.xml" value="0.2265" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/drawable/scrim_shape.xml" value="0.2135" />
+        <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/about_event.xml" value="0.20425724637681159" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/activity_auth.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/activity_main.xml" value="0.2115036231884058" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/activity_organizer.xml" value="0.20425724637681159" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/activity_phone_number.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/content_organizer.xml" value="0.20425724637681159" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/event.xml" value="0.536" />
+        <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/event_details.xml" value="0.20425724637681159" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/event_item.xml" value="0.20425724637681159" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/eventdetails.xml" value="0.20425724637681159" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/eventimg.xml" value="0.20425724637681159" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/explorevent.xml" value="0.20425724637681159" />
+        <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_about_event.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_choice.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_event_detalis.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_first.xml" value="0.264" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_home.xml" value="0.20425724637681159" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_notifications.xml" value="0.20425724637681159" />
@@ -70,6 +74,9 @@
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/payment_page3.xml" value="0.20425724637681159" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/payment_page4.xml" value="0.20425724637681159" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/payment_page5.xml" value="0.20425724637681159" />
+        <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/review.xml" value="0.20425724637681159" />
+        <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/shra.xml" value="0.20425724637681159" />
+        <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/time_date.xml" value="0.20425724637681159" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/menu/bottom_nav1.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />

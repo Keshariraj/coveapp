@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/event_details_nav"
+    app:startDestination="@id/eventDetalis">
+
+    <fragment
+        android:id="@+id/eventDetalis"
+        android:name="com.digi.coveapp.ui.EventDetalis"
+        android:label="fragment_event_detalis"
+        tools:layout="@layout/fragment_event_detalis" >
+        <action
+            android:id="@+id/action_eventDetalis_to_aboutEventFragment"
+            app:destination="@id/aboutEventFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutEventFragment"
+        android:name="com.digi.coveapp.ui.AboutEventFragment"
+        android:label="fragment_about_event"
+        tools:layout="@layout/fragment_about_event" />
+</navigation>

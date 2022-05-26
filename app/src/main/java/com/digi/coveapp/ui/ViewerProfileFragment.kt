@@ -20,7 +20,7 @@ class ViewerProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentViewerProfileBinding.inflate(inflater, container, false)
-        binding.editSubmit.setOnClickListener {
+        binding.updateButton.setOnClickListener {
             startActivity(Intent(requireContext(), MainActivity::class.java))
             requireActivity().finish()
         }

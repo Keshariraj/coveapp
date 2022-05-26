@@ -3,10 +3,10 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="padding_large">padding_large</dimen>
-    <dimen name="avatar_large">avatar_large</dimen>
-    <dimen name="layout_margin_large">margin_large</dimen>
-    <dimen name="padding_medium">padding_medium</dimen>
-    <dimen name="layout_margin_none">margin</dimen>
-    <dimen name="layout_margin_small">small</dimen>
+    <dimen name="padding_large">10dp</dimen>
+    <dimen name="avatar_large">15dp</dimen>
+    <dimen name="layout_margin_large">20dp</dimen>
+    <dimen name="padding_medium">12dp</dimen>
+    <dimen name="layout_margin_none">8dp</dimen>
+    <dimen name="layout_margin_small">6dp</dimen>
 </resources>
