@@ -5,13 +5,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradiant">
+    android:background="">
+
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:context=".ui.OrganiserSiginFragment">
+
+        <TextView
+            android:id="@+id/eventName"
+            android:layout_width="357dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="612dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Sign in to like The New Events" />
 
         <TextView
             android:id="@+id/signin_textview"
@@ -85,25 +102,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:textSize="20sp"
+            android:layout_marginStart="8dp"
             android:text="New User?"
-            app:layout_constraintTop_toBottomOf="@id/nextButton"
-            app:layout_constraintStart_toStartOf="@id/nextButton"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/nextButton"
+            app:layout_constraintTop_toBottomOf="@+id/nextButton" />
 
         <TextView
             android:id="@+id/signup_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:textStyle="bold"
-            android:textSize="20sp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
             android:text="Sign UP"
             android:textColor="#006E7F"
-            app:layout_constraintTop_toBottomOf="@id/nextButton"
-            app:layout_constraintEnd_toEndOf="@id/nextButton"
-            app:layout_constraintStart_toEndOf="@id/donthaveaccount"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/nextButton"
+            app:layout_constraintStart_toEndOf="@+id/donthaveaccount"
+            app:layout_constraintTop_toBottomOf="@+id/nextButton" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

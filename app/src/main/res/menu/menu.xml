@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <group>
+      <item android:id="@+id/profile_menu"
+            android:icon="@drawable/ic_baseline_people_outline_24"
+         android:title="Profile"/>
+   <item android:id="@+id/about_menu"
+       android:icon="@drawable/ic_base_info_24"
+       android:title="About"/>
+   <item android:id="@+id/logout_menu"
+       android:icon="@drawable/ic_baseline_login_25"
+       android:title="Logout"/>
+
+   </group>
+</menu>

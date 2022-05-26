@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            motion:layout_editor_absoluteY="679dp"
+            android:layout_height="36dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintHorizontal_bias="0.002"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="39dp"
+            android:id="@+id/imageView3" />
+        <Constraint
+            android:layout_marginEnd="16dp"
+            motion:layout_editor_absoluteY="691dp"
+            android:layout_height="37dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="24dp"
+            android:layout_marginStart="16dp"
+            android:id="@+id/textView10" />
+        <Constraint
+            android:layout_height="17dp"
+            motion:layout_constraintStart_toStartOf="@+id/textView10"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintEnd_toEndOf="@+id/textView10"
+            android:layout_width="38dp"
+            motion:layout_constraintTop_toBottomOf="@+id/textView10"
+            android:id="@+id/textView11"
+            motion:layout_editor_absoluteX="182dp" />
+        <Constraint
+            android:layout_height="24dp"
+            motion:layout_constraintStart_toStartOf="@+id/textView11"
+            motion:layout_constraintHorizontal_bias="0.058"
+            motion:layout_constraintEnd_toEndOf="@+id/textView11"
+            android:layout_width="27dp"
+            motion:layout_constraintTop_toBottomOf="@+id/textView11"
+            android:id="@+id/textView12" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_marginEnd="16dp"
+            android:layout_height="65dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintHorizontal_bias="0.484"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="346dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:id="@+id/textView10"
+            android:layout_marginTop="168dp" />
+    </ConstraintSet>
+</MotionScene>
