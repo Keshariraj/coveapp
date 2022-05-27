@@ -8,8 +8,8 @@
     <string name="your_web_client_id">833134460175-3gd4vfrickqpsics1n5edkj1e5o2pohb.apps.googleusercontent.com</string>
     <string name="title_activity_organizer">OrganizerActivity</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="first_fragment_label">Event List</string>
+    <string name="second_fragment_label">Create New Event</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 

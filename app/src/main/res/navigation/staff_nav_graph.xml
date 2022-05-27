@@ -7,22 +7,34 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.digi.coveapp.FirstFragment"
+        android:name="com.digi.coveapp.organizer.StaffEventListFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_staffEventManageFragment"
+            app:destination="@id/staffEventManageFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.digi.coveapp.SecondFragment"
+        android:name="com.digi.coveapp.organizer.StaffEventAddFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/staffEventManageFragment"
+        android:name="com.digi.coveapp.organizer.StaffEventManageFragment"
+        android:label="Manage Event"
+        tools:layout="@layout/fragment_event_manage" >
+        <argument
+            android:name="name"
+            app:argType="string" />
     </fragment>
 </navigation>

@@ -7,9 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.digi.coveapp.OrganizerActivity
-import com.digi.coveapp.R
 import com.digi.coveapp.databinding.FragmentOrganiserRegisterBinding
-import com.digi.coveapp.databinding.FragmentOrganiserSiginBinding
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth

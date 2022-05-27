@@ -15,8 +15,8 @@ class Utils {
         var bitmap: Bitmap? = null
         try {
             val baos = ByteArrayOutputStream()
-            bitmap = MediaStore.Images.Media.getBitmap(c.getContentResolver(), photoUri)
-            bitmap.compress(Bitmap.CompressFormat.JPEG, 80, baos)
+            bitmap = MediaStore.Images.Media.getBitmap(c.contentResolver, photoUri)
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 70, baos)
             val imageBytes: ByteArray = baos.toByteArray()
             return Base64.encodeToString(imageBytes, Base64.DEFAULT)
         } catch (e: IOException) {

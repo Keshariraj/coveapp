@@ -24,9 +24,6 @@ class EventDetalis : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentEventDetalisBinding.inflate(inflater, container, false)
-
-
-
         return binding.root
     }
 

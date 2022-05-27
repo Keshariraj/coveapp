@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/activity_organizer.xml" value="0.2703804347826087" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/card_staff_event.xml" value="0.35572916666666665" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_event_detalis.xml" value="0.2703804347826087" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_event_manage.xml" value="0.2703804347826087" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_eventdetails1.xml" value="0.2703804347826087" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_first.xml" value="0.2703804347826087" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_second.xml" value="0.2703804347826087" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/item_event.xml" value="0.2703804347826087" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/list_item.xml" value="0.2703804347826087" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/coveapp/app/src/main/res/drawable/background.xml" value="0.108" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/coveapp/app/src/main/res/drawable/light_gray_rounded_shape_bg.xml" value="0.108" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/coveapp/app/src/main/res/drawable/person.xml" value="0.108" />
