@@ -1,9 +1,12 @@
 package com.digi.coveapp.organizer
 
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
+import android.database.Cursor
 import android.net.Uri
 import android.os.Bundle
+import android.provider.OpenableColumns
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -25,7 +28,7 @@ import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.ktx.storage
 
 
-class StaffEventAddFragment : Fragment() {
+class OrganizerEventAddFragment : Fragment() {
     private lateinit var db: FirebaseFirestore
     private lateinit var auth: FirebaseAuth
     private lateinit var storage: FirebaseStorage
@@ -95,25 +98,21 @@ class StaffEventAddFragment : Fragment() {
                 val price = binding.editPrice.text.toString()
                 val date = binding.editDate.text.toString()
                 val summ = binding.editSummary.text.toString()
-                val banner = photoUri5?.let { sendToFirebaseStorage(it, binding.editImageBanner) }
-                photoUri1?.let { sendToFirebaseStorage(it, binding.editimg1) }
-                photoUri2?.let { sendToFirebaseStorage(it, binding.editimg2) }
-                photoUri3?.let { sendToFirebaseStorage(it, binding.editimg3) }
-                photoUri4?.let { sendToFirebaseStorage(it, binding.editimg4) }
+
                 if (evntName.length > 5 && loc.isNotEmpty() && price.isNotEmpty() && summ.isNotBlank() && allTrue(
                         uploadCheckList
                     )
                 ) {
                     binding.btnSubmit.isEnabled = false
                     val bannerUrl = binding.editImageBanner.tag as String
-                    db.collection("events").document(user.uid).set(
+                    db.collection("events").add(
                         Event(
                             eventName = evntName,
                             location = loc,
                             price = price,
                             date = date,
                             summary = summ,
-                            banner = bannerUrl,
+                            banner = binding.editImageBanner.tag as String,
                             img1 = binding.editimg1.tag as String,
                             img2 = binding.editimg2.tag as String,
                             img3 = binding.editimg3.tag as String,
@@ -136,9 +135,8 @@ class StaffEventAddFragment : Fragment() {
 
                         binding.btnSubmit.isEnabled = true
                     }
-                }
-                else{
-                    Snackbar.make(binding.root,"Please wait", Snackbar.LENGTH_LONG).show()
+                } else {
+                    Snackbar.make(binding.root, "Please wait, uploading to cloud", Snackbar.LENGTH_LONG).show()
                 }
             } catch (e: Exception) {
                 Log.d("ERROR", e.message.toString())
@@ -148,10 +146,15 @@ class StaffEventAddFragment : Fragment() {
     }
 
     private fun sendToFirebaseStorage(imgUri: Uri, img: ImageView) {
-        val eventFolderRef = storage.reference.child("events").child(imgUri.lastPathSegment.toString())
+        val filename = imgUri.getName(requireActivity())
+        val eventFolderRef =
+            storage.reference.child("events").child(filename)
         eventFolderRef.putFile(imgUri).addOnProgressListener { task ->
             val progress = task.bytesTransferred / task.totalByteCount * 100
-            Log.e("Uploading", "=>${progress} %")
+            Log.e(
+                "Uploading",
+                "=>${task.bytesTransferred}/${task.totalByteCount} ,${progress} ${img.id} $filename %"
+            )
         }.addOnCompleteListener { it ->
             if (it.isSuccessful) {
                 eventFolderRef.downloadUrl.addOnSuccessListener { urlUri ->
@@ -179,22 +182,27 @@ class StaffEventAddFragment : Fragment() {
                 1 -> {
                     photoUri1 = data?.data
                     Glide.with(requireActivity()).load(photoUri1).into(binding.editimg1)
+                    photoUri1?.let { sendToFirebaseStorage(it, binding.editimg1) }
                 }
                 2 -> {
                     photoUri2 = data?.data
                     Glide.with(requireActivity()).load(photoUri2).into(binding.editimg2)
+                    photoUri2?.let { sendToFirebaseStorage(it, binding.editimg2) }
                 }
                 3 -> {
                     photoUri3 = data?.data
                     Glide.with(requireActivity()).load(photoUri3).into(binding.editimg3)
+                    photoUri3?.let { sendToFirebaseStorage(it, binding.editimg3) }
                 }
                 4 -> {
                     photoUri4 = data?.data
                     Glide.with(requireActivity()).load(photoUri4).into(binding.editimg4)
+                    photoUri4?.let { sendToFirebaseStorage(it, binding.editimg4) }
                 }
                 5 -> {
                     photoUri5 = data?.data
                     Glide.with(requireActivity()).load(photoUri5).into(binding.editImageBanner)
+                    photoUri5?.let { sendToFirebaseStorage(it, binding.editImageBanner) }
                 }
             }
         } else {
@@ -215,4 +223,12 @@ class StaffEventAddFragment : Fragment() {
         return true
     }
 
+    private fun Uri.getName(context: Context): String {
+        val returnCursor = context.contentResolver.query(this, null, null, null, null)
+        val nameIndex = returnCursor?.getColumnIndex(OpenableColumns.DISPLAY_NAME)
+        returnCursor?.moveToFirst()
+        val fileName = nameIndex?.let { returnCursor.getString(it) }
+        returnCursor?.close()
+        return fileName.toString()
+    }
 }

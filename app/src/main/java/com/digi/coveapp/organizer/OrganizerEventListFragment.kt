@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.digi.coveapp.R
@@ -20,7 +20,7 @@ import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
 
 
-class StaffEventListFragment : Fragment(), OnEventItemClickListener {
+class OrganizerEventListFragment : androidx.fragment.app.Fragment(), OnEventItemClickListener {
 
     private var _binding: FragmentFirstBinding? = null
     private val binding get() = _binding!!
@@ -37,14 +37,14 @@ class StaffEventListFragment : Fragment(), OnEventItemClickListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.button2.setOnClickListener {
+        binding.editbtn.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
         binding.recyclerView.apply {
             layoutManager =
                 LinearLayoutManager(requireContext())
 
-            adapter = EventStaffAdapter(eventList, this@StaffEventListFragment)
+            adapter = EventStaffAdapter(eventList, this@OrganizerEventListFragment)
         }
         loadEvents()
     }

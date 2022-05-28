@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.digi.coveapp.organizer.StaffEventListFragment"
+        android:name="com.digi.coveapp.organizer.OrganizerEventListFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.digi.coveapp.organizer.StaffEventAddFragment"
+        android:name="com.digi.coveapp.organizer.OrganizerEventAddFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
 
@@ -30,7 +30,7 @@
     </fragment>
     <fragment
         android:id="@+id/staffEventManageFragment"
-        android:name="com.digi.coveapp.organizer.StaffEventManageFragment"
+        android:name="com.digi.coveapp.organizer.OrganizerEventManageFragment"
         android:label="Manage Event"
         tools:layout="@layout/fragment_event_manage" >
         <argument

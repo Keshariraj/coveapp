@@ -5,8 +5,7 @@
     android:id="@+id/ScrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginVertical="1dp"
-    >
+    android:layout_marginVertical="1dp">
 
     <LinearLayout
         android:id="@+id/LinearScroll"
@@ -187,6 +186,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/editSummary" />
+
         <Button
             android:id="@+id/btnDelete"
             android:layout_width="match_parent"

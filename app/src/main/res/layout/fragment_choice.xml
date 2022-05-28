@@ -14,6 +14,7 @@
         android:backgroundTint="#FF6363"
         android:text="ORGANIZATION"
         android:textStyle="bold"
+        app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -29,6 +30,7 @@
         android:backgroundTint="#F8B400"
         android:text="USER"
         android:textStyle="bold"
+        app:cornerRadius="5dp"
         app:layout_constraintEnd_toEndOf="@+id/org_button"
         app:layout_constraintStart_toStartOf="@+id/org_button"
         app:layout_constraintTop_toBottomOf="@+id/org_button" />
