@@ -3,16 +3,48 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/about_event.xml" value="0.39809782608695654" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/activity_auth.xml" value="0.39809782608695654" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/activity_main.xml" value="0.39809782608695654" />
         <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/activity_organizer.xml" value="0.2703804347826087" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/activity_phone_number.xml" value="0.39809782608695654" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/card_event_viewer.xml" value="0.39809782608695654" />
         <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/card_staff_event.xml" value="0.35572916666666665" />
-        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/card_viewer_staff.xml" value="0.2552083333333333" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/card_viewer_staff.xml" value="0.39809782608695654" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/content_organizer.xml" value="0.2552083333333333" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/explorevent.xml" value="0.39719202898550726" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_about_event.xml" value="0.39719202898550726" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_buy_ticket.xml" value="0.39719202898550726" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_choice.xml" value="0.39719202898550726" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_dashboard.xml" value="0.39719202898550726" />
         <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_event_detalis.xml" value="0.2703804347826087" />
         <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_event_manage.xml" value="0.2703804347826087" />
         <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_eventdetails1.xml" value="0.2703804347826087" />
         <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_first.xml" value="0.2703804347826087" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_home.xml" value="0.39809782608695654" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_notifications.xml" value="0.39719202898550726" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_organiser_register.xml" value="0.39719202898550726" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_organiser_sigin.xml" value="0.39719202898550726" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_otp_verification.xml" value="0.39719202898550726" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_review.xml" value="0.39719202898550726" />
         <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_second.xml" value="0.2703804347826087" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_splash.xml" value="0.39719202898550726" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_viewer_profile.xml" value="0.39719202898550726" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/fragment_viewer_sigin.xml" value="0.39719202898550726" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/header_file.xml" value="0.39719202898550726" />
         <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/item_event.xml" value="0.2703804347826087" />
         <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/list_item.xml" value="0.2703804347826087" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/meeting.xml" value="0.39719202898550726" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/payment_page1.xml" value="0.39719202898550726" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/payment_page2.xml" value="0.39719202898550726" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/payment_page3.xml" value="0.39719202898550726" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/payment_page4.xml" value="0.39719202898550726" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/layout/payment_page5.xml" value="0.39719202898550726" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/menu/bottom_nav1.xml" value="0.4666666666666667" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.4666666666666667" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/menu/menu.xml" value="0.4666666666666667" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/menu/menu_staff.xml" value="0.465625" />
+        <entry key="..\:/Users/ZAID/Documents/coding/coveapp/app/src/main/res/menu/nav_menu1.xml" value="0.4666666666666667" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/coveapp/app/src/main/res/drawable/background.xml" value="0.108" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/coveapp/app/src/main/res/drawable/light_gray_rounded_shape_bg.xml" value="0.108" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/coveapp/app/src/main/res/drawable/person.xml" value="0.108" />

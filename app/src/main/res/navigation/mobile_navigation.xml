@@ -9,7 +9,11 @@
         android:id="@+id/navigation_home"
         android:name="com.digi.coveapp.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_eventDetalis"
+            app:destination="@id/eventDetalis" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_dashboard"
@@ -22,4 +26,52 @@
         android:name="com.digi.coveapp.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/eventDetalis"
+        android:name="com.digi.coveapp.ui.home.EventDetalisFragment"
+        android:label="fragment_event_detalis"
+        tools:layout="@layout/fragment_event_detalis">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_eventDetalis_to_reviewFragment"
+            app:destination="@id/reviewFragment" />
+        <action
+            android:id="@+id/action_eventDetalis_to_buyTicketFragment"
+            app:destination="@id/buyTicketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewFragment"
+        android:name="com.digi.coveapp.ui.ReviewFragment"
+        android:label="fragment_review"
+        tools:layout="@layout/fragment_review">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="event_id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_reviewFragment_to_eventDetalis"
+            app:destination="@id/eventDetalis" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyTicketFragment"
+        android:name="com.digi.coveapp.ui.BuyTicketFragment"
+        android:label="fragment_buy_ticket"
+        tools:layout="@layout/fragment_buy_ticket">
+        <argument
+            android:name="eventId"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="price"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_buyTicketFragment_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
 </navigation>

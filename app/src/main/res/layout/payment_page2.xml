@@ -7,10 +7,12 @@
 
     <FrameLayout
         android:id="@+id/frame_container"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="56dp"
-        android:layout_width="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </FrameLayout>
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottom_app_bar"
@@ -70,12 +72,12 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/nav_send_money"
-        android:layout_height="41dp"
-        android:layout_width="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
         app:backgroundTint="@color/colorAccent"
         app:fabSize="normal"
-        app:layout_anchor="@+id/bottom_app_bar"
-        app:layout_anchorGravity="center"
+        app:layout_anchor="@+id/frame_container"
+        app:layout_anchorGravity="bottom|center"
         app:srcCompat="@drawable/send"
         app:tint="@color/white" />
 
