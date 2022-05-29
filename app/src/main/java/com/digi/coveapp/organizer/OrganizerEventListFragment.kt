@@ -1,6 +1,7 @@
 package com.digi.coveapp.organizer
 
 import android.annotation.SuppressLint
+import android.app.AlertDialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,7 @@ import com.digi.coveapp.R
 import com.digi.coveapp.adapters.EventStaffAdapter
 import com.digi.coveapp.databinding.FragmentFirstBinding
 import com.digi.coveapp.listener.OnEventItemClickListener
+import com.digi.coveapp.listener.OnEventItemLongClickListener
 import com.digi.coveapp.models.Event
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.ktx.auth
@@ -20,7 +22,8 @@ import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
 
 
-class OrganizerEventListFragment : androidx.fragment.app.Fragment(), OnEventItemClickListener {
+class OrganizerEventListFragment : androidx.fragment.app.Fragment(), OnEventItemClickListener,
+    OnEventItemLongClickListener {
 
     private var _binding: FragmentFirstBinding? = null
     private val binding get() = _binding!!
@@ -44,7 +47,11 @@ class OrganizerEventListFragment : androidx.fragment.app.Fragment(), OnEventItem
             layoutManager =
                 LinearLayoutManager(requireContext())
 
-            adapter = EventStaffAdapter(eventList, this@OrganizerEventListFragment)
+            adapter = EventStaffAdapter(
+                eventList,
+                this@OrganizerEventListFragment,
+                this@OrganizerEventListFragment
+            )
         }
         loadEvents()
     }
@@ -80,8 +87,38 @@ class OrganizerEventListFragment : androidx.fragment.app.Fragment(), OnEventItem
     }
 
     override fun onEventCLick(view: View, event: Event) {
-        val dir = StaffEventListFragmentDirections.actionFirstFragmentToStaffEventManageFragment(event.eventName)
-        findNavController().navigate(dir)
+        // show a snackbar
+        showSnack("Long press to Delete this event")
+    }
+
+    override fun onEventLongCLick(view: View, event: Event) {
+        AlertDialog.Builder(requireContext())
+            .setTitle("Delete Event")
+            .setMessage("Are you sure you want to delete this event?")
+            .setPositiveButton("Yes") { dialog, which ->
+                db.collection("events").whereEqualTo("name", event.eventName)
+                    .whereEqualTo("uid", event.uid).get()
+                    .addOnSuccessListener {
+                        if (it.size() > 0) {
+                            val eventId = it.documents[0].id
+                            db.collection("events").document(eventId).delete()
+                                .addOnSuccessListener {
+                                    showSnack("Event Deleted")
+                                    loadEvents()
+                                }
+                                .addOnFailureListener { e ->
+                                    showSnack(e.message.toString())
+                                }
+                        }
+                    }
+                    .addOnFailureListener { e ->
+                        showSnack(e.message.toString())
+                    }
+            }
+            .setNegativeButton("No") { dialog, which ->
+                showSnack("Event not Deleted")
+            }
+            .show()
     }
 
 

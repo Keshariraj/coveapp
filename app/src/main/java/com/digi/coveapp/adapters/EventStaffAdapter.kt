@@ -10,12 +10,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.digi.coveapp.R
 import com.digi.coveapp.listener.OnEventItemClickListener
+import com.digi.coveapp.listener.OnEventItemLongClickListener
 import com.digi.coveapp.models.Event
+import com.digi.coveapp.organizer.OrganizerEventListFragment
 import com.google.android.material.imageview.ShapeableImageView
 
 class EventStaffAdapter(
     private val newList: ArrayList<Event>,
-    val listener: OnEventItemClickListener
+    val listener: OnEventItemClickListener,
+    val listener2: OnEventItemLongClickListener
 ) :
     RecyclerView.Adapter<EventStaffAdapter.MyViewHolder>() {
 
@@ -36,6 +39,10 @@ class EventStaffAdapter(
         holder.container.setOnClickListener {
             val event:Event = it.tag as Event
             listener.onEventCLick(it,event)
+        }
+        holder.container.setOnClickListener {
+            val event:Event = it.tag as Event
+            listener2.onEventLongCLick(it,event)
         }
     }
 
