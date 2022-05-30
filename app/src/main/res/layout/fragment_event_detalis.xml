@@ -1,82 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.EventDetalis">
+    tools:context=".ui.home.EventDetalisFragment">
 
-    <Toolbar
-        android:id="@+id/editToolbar"
-        android:layout_width="0dp"
-        android:layout_height="74dp"
-        android:background="#6275DF"
-        android:navigationIcon="@drawable/ic_navigate_before_24"
-        android:scrollbarSize="10dp"
-        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
-        android:layout_width="392dp"
-        android:layout_height="218dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="16dp"
-        app:cardBackgroundColor="#ACABAB"
-        app:cardCornerRadius="30dp"
-        app:cardElevation="6dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editToolbar">
-
-    </androidx.cardview.widget.CardView>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="399dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/nav_menu1" />
 
     <Button
-        android:id="@+id/editTicket"
-        android:layout_width="384dp"
+        android:id="@+id/btnBuy"
+        android:layout_width="0dp"
         android:layout_height="64dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="#32373A"
-        android:text="Ticket"
+        android:text="Buy Ticket"
         android:textColor="#ECE8E8"
         app:iconTint="#403E3E"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+        app:layout_constraintTop_toBottomOf="@+id/eventTitle" />
 
     <Button
-        android:id="@+id/editShare"
+        android:id="@+id/btnShare"
         android:layout_width="175dp"
         android:layout_height="64dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="43dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="#32373A"
         android:navigationIcon="@drawable/ic_baseline_sharp_share_24"
         android:text="Share"
         app:icon="@drawable/ic_baseline_sharp_share_24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editAbout"
-        app:layout_constraintTop_toBottomOf="@+id/editTicket" />
+        app:layout_constraintTop_toBottomOf="@+id/btnBuy" />
 
     <Button
-        android:id="@+id/editReview"
+        android:id="@+id/btnReview"
         android:layout_width="175dp"
         android:layout_height="64dp"
         android:layout_marginTop="8dp"
@@ -84,13 +45,13 @@
         android:navigationIcon="@drawable/ic_rate_review_24"
         android:text="Review"
         app:icon="@drawable/ic_rate_review_24"
-        app:layout_constraintEnd_toEndOf="@+id/editShare"
+        app:layout_constraintEnd_toEndOf="@+id/btnShare"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/editShare"
-        app:layout_constraintTop_toBottomOf="@+id/editShare" />
+        app:layout_constraintStart_toStartOf="@+id/btnShare"
+        app:layout_constraintTop_toBottomOf="@+id/btnShare" />
 
     <Button
-        android:id="@+id/editDate_time"
+        android:id="@+id/btnDateTime"
         android:layout_width="175dp"
         android:layout_height="64dp"
         android:layout_marginTop="8dp"
@@ -99,34 +60,50 @@
         android:navigationIcon="@drawable/ic_twotone_date_range_26"
         android:text="Time / Date"
         app:icon="@drawable/ic_twotone_date_range_26"
-        app:layout_constraintEnd_toEndOf="@+id/editAbout"
+        app:layout_constraintEnd_toEndOf="@+id/btnAbout"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editAbout"
-        app:layout_constraintTop_toBottomOf="@+id/editAbout" />
+        app:layout_constraintStart_toStartOf="@+id/btnAbout"
+        app:layout_constraintTop_toBottomOf="@+id/btnAbout" />
 
     <Button
-        android:id="@+id/editAbout"
+        android:id="@+id/btnAbout"
         android:layout_width="175dp"
         android:layout_height="64dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#32373A"
         android:navigationIcon="@drawable/ic_round_expand_circle_down_28"
         android:text="About Event"
         app:icon="@drawable/ic_round_expand_circle_down_28"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTicket" />
+        app:layout_constraintTop_toBottomOf="@+id/btnBuy" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Search"
+    <ImageView
+        android:id="@+id/eventImage"
+        android:layout_width="0dp"
+        android:layout_height="270dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="@+id/editToolbar"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/eventTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventImage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
