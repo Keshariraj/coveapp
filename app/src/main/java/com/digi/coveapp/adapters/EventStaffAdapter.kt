@@ -9,9 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.digi.coveapp.R
-import com.digi.coveapp.listener.OnEventItemClickListener
 import com.digi.coveapp.models.Event
-import com.google.android.material.imageview.ShapeableImageView
 
 class EventStaffAdapter(
     private val newList: ArrayList<Event>,

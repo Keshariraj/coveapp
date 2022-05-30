@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.digi.coveapp.R
 import com.digi.coveapp.adapters.EventStaffAdapter
 import com.digi.coveapp.databinding.FragmentFirstBinding
-import com.digi.coveapp.listener.OnEventItemClickListener
 import com.digi.coveapp.models.Event
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.ktx.auth

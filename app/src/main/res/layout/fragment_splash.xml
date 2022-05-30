@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="#FDFDFC"
+    android:background="@drawable/background1"
     app:layoutDescription="@xml/fragment_splash_scene2"
     tools:context=".ui.SplashFragment">
 
@@ -17,7 +17,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="serif"
-        android:text="Welcome"
+        android:text="Welcome To The"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#0C0C0C"
@@ -27,48 +27,35 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="156dp" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="204dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="serif"
-        android:text="To The"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#090909"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/textView10"
-        app:layout_constraintStart_toStartOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+    <ImageView
+        android:id="@+id/editimg6"
+        android:layout_width="0dp"
+        android:layout_height="283dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/logocove"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="238dp" />
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="298dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="serif"
         android:text="Cove"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#000000"
-        android:textSize="40dp"
+        android:textSize="50dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/textView11"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
-
-    <ImageView
-        android:id="@+id/splash_img"
-        android:layout_width="0dp"
-        android:layout_height="278dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        tools:srcCompat="@drawable/imgp" />
+        app:layout_constraintTop_toBottomOf="@+id/editimg6" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

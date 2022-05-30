@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background1">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/phoneNumberTextField"
@@ -16,8 +16,10 @@
         app:errorEnabled="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/PhoneNumber"
@@ -31,13 +33,19 @@
 
     <Button
         android:id="@+id/generate_otp_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:backgroundTint="#F8B400"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#F3BE35"
+        android:fontFamily="serif"
         android:text="GET OTP"
+        android:textAlignment="center"
+        android:textColor="#0B0909"
         android:textSize="20dp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/phoneNumberTextField" />
 
@@ -48,31 +56,29 @@
         android:layout_marginTop="92dp"
         android:src="@drawable/otpicon"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_width="198dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="36dp"
         android:text="OTP Verification"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgsendotp" />
 
     <TextView
         android:layout_width="327dp"
         android:layout_height="49dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="32dp"
         android:gravity="center"
         android:text="we will send you an one time otpon this given mobile number"
         android:textColor="@color/black"
-        android:textSize="14sp"
+        android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
