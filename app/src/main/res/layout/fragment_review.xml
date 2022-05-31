@@ -5,26 +5,35 @@
     android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradiant"
     tools:context=".ui.ReviewFragment">
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="282dp"
+        android:layout_height="38dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:fontFamily="serif"
         android:text="Review this Conference"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textEventTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="104dp"
+        android:layout_height="28dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="64dp"
+        android:fontFamily="serif"
         android:text="Event TItle"
+        android:textAlignment="center"
+        android:textColor="#090808"
+        android:textSize="17dp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
@@ -36,8 +45,10 @@
         android:layout_marginBottom="16dp"
         android:clickable="true"
         android:src="@drawable/otpicon"
+        app:backgroundTint="#E88982"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="#EFEBEB" />
 
     <EditText
         android:id="@+id/editReview"
@@ -46,7 +57,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:background="@android:drawable/editbox_background"
+        android:background="@android:drawable/title_bar"
         android:ems="10"
         android:gravity="top|left"
         android:inputType="textLongMessage|textCapSentences"
@@ -56,6 +67,7 @@
         android:minLines="10"
         android:padding="16dp"
         android:text="Name"
+        android:textColor="#050404"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

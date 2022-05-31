@@ -16,10 +16,10 @@
 
         <TextView
             android:id="@+id/eventName"
-            android:layout_width="357dp"
-            android:layout_height="77dp"
+            android:layout_width="365dp"
+            android:layout_height="123dp"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="556dp"
+            android:layout_marginTop="36dp"
             android:layout_marginEnd="30dp"
             android:gravity="center"
             android:maxLines="2"
@@ -28,7 +28,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nextButton"
             tools:text="Sign in to like The New Events" />
 
         <TextView
@@ -108,28 +108,32 @@
             android:layout_width="105dp"
             android:layout_height="32dp"
             android:layout_margin="16dp"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
             android:text="New User?"
             android:textAlignment="center"
             android:textColor="#0D87E8"
             android:textColorHint="@color/purple_700"
             android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/eventName"
             app:layout_constraintStart_toStartOf="@+id/nextButton"
-            tools:layout_editor_absoluteY="455dp" />
+            app:layout_constraintTop_toBottomOf="@+id/nextButton"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/signup_textview"
-            android:layout_width="82dp"
-            android:layout_height="31dp"
+            android:layout_width="83dp"
+            android:layout_height="25dp"
             android:layout_margin="16dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:text="Sign UP"
             android:textAlignment="textEnd"
             android:textColor="#EFF0F4"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/nextButton"
-            tools:layout_editor_absoluteY="455dp" />
+            app:layout_constraintStart_toEndOf="@+id/donthaveaccount"
+            app:layout_constraintTop_toBottomOf="@+id/nextButton" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

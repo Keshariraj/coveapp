@@ -77,7 +77,8 @@ class HomeFragment : Fragment(), OnEventItemClickListener {
         _binding = null
     }
 
-    override fun onEventCLick(view: View, event: Event) {
+    override fun onEventClick(view: View, event: Event) {
         findNavController().navigate(HomeFragmentDirections.actionNavigationHomeToEventDetalis(event.eventName))
     }
+
 }

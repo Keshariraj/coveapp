@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradiant"
     tools:context=".ui.home.EventDetalisFragment">
-
 
     <Button
         android:id="@+id/btnBuy"
@@ -14,10 +14,13 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="#32373A"
+        android:backgroundTint="#F68D86"
+        android:fontFamily="sans-serif-medium"
         android:text="Buy Ticket"
-        android:textColor="#ECE8E8"
-        app:iconTint="#403E3E"
+        android:textColor="#040303"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:iconTint="#6B37C8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,25 +28,33 @@
 
     <Button
         android:id="@+id/btnShare"
-        android:layout_width="175dp"
-        android:layout_height="64dp"
+        android:layout_width="138dp"
+        android:layout_height="56dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="#32373A"
+        android:backgroundTint="#E37A72"
         android:navigationIcon="@drawable/ic_baseline_sharp_share_24"
         android:text="Share"
+        android:textColor="#0C0B0B"
+        android:textSize="17dp"
+        android:textStyle="bold"
         app:icon="@drawable/ic_baseline_sharp_share_24"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toEndOf="@+id/btnAbout"
         app:layout_constraintTop_toBottomOf="@+id/btnBuy" />
 
     <Button
         android:id="@+id/btnReview"
-        android:layout_width="175dp"
-        android:layout_height="64dp"
+        android:layout_width="141dp"
+        android:layout_height="60dp"
         android:layout_marginTop="8dp"
-        android:backgroundTint="#32373A"
+        android:backgroundTint="#E37A72"
         android:navigationIcon="@drawable/ic_rate_review_24"
         android:text="Review"
+        android:textColor="#0C0A0A"
+        android:textSize="17dp"
+        android:textStyle="bold"
         app:icon="@drawable/ic_rate_review_24"
         app:layout_constraintEnd_toEndOf="@+id/btnShare"
         app:layout_constraintHorizontal_bias="1.0"
@@ -52,13 +63,17 @@
 
     <Button
         android:id="@+id/btnDateTime"
-        android:layout_width="175dp"
-        android:layout_height="64dp"
+        android:layout_width="156dp"
+        android:layout_height="63dp"
         android:layout_marginTop="8dp"
-        android:backgroundTint="#32373A"
+        android:backgroundTint="#E37A72"
         android:drawableStart="@drawable/ic_twotone_date_range_26"
         android:navigationIcon="@drawable/ic_twotone_date_range_26"
         android:text="Time / Date"
+        android:textAllCaps="false"
+        android:textColor="#0B0D0E"
+        android:textSize="14dp"
+        android:textStyle="bold"
         app:icon="@drawable/ic_twotone_date_range_26"
         app:layout_constraintEnd_toEndOf="@+id/btnAbout"
         app:layout_constraintHorizontal_bias="0.0"
@@ -67,14 +82,18 @@
 
     <Button
         android:id="@+id/btnAbout"
-        android:layout_width="175dp"
-        android:layout_height="64dp"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:backgroundTint="#32373A"
+        android:backgroundTint="#E37A72"
+        android:fontFamily="sans-serif-medium"
         android:navigationIcon="@drawable/ic_round_expand_circle_down_28"
         android:text="About Event"
+        android:textColor="#0B0909"
+        android:textStyle="bold"
         app:icon="@drawable/ic_round_expand_circle_down_28"
+        app:iconTint="#0A0A0B"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnBuy" />
 
@@ -90,6 +109,18 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:src="@tools:sample/backgrounds/scenic" />
 
+    <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+        android:id="@+id/carousel"
+        android:layout_width="406dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/eventTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/eventTitle"
         android:layout_width="0dp"
@@ -104,6 +135,6 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eventImage" />
+        app:layout_constraintTop_toBottomOf="@+id/carousel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

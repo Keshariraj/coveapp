@@ -86,10 +86,7 @@ class OrganizerEventListFragment : androidx.fragment.app.Fragment(), OnEventItem
         _binding = null
     }
 
-    override fun onEventCLick(view: View, event: Event) {
-        // show a snackbar
-        showSnack("Long press to Delete this event")
-    }
+
 
     override fun onEventLongCLick(view: View, event: Event) {
         AlertDialog.Builder(requireContext())
@@ -119,6 +116,10 @@ class OrganizerEventListFragment : androidx.fragment.app.Fragment(), OnEventItem
                 showSnack("Event not Deleted")
             }
             .show()
+    }
+
+    override fun onEventClick(view: View, event: Event) {
+        showSnack("Long press to Delete this event")
     }
 
 

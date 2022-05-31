@@ -32,13 +32,14 @@ class EventViewerAdapter(
         holder.tvHeading.text = currentItem.eventName
         Glide.with(holder.img).load(currentItem.banner).into(holder.img)
         holder.container.tag = currentItem
+        holder.btnView.tag = currentItem
         holder.container.setOnClickListener {
             val event: Event = it.tag as Event
-            listener.onEventCLick(it, event)
+            listener.onEventClick(it, event)
         }
         holder.btnView.setOnClickListener {
             val event: Event = it.tag as Event
-            listener.onEventCLick(it, event)
+            listener.onEventClick(it, event)
         }
     }
 

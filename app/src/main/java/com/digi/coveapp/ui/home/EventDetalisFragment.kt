@@ -16,6 +16,7 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
+import org.imaginativeworld.whynotimagecarousel.model.CarouselItem
 
 
 class EventDetalisFragment : Fragment() {
@@ -91,6 +92,35 @@ class EventDetalisFragment : Fragment() {
                 )
             )
         }
+        binding.carousel.registerLifecycle(lifecycle)
+        val list = mutableListOf<CarouselItem>()
+        list.add(
+            CarouselItem(
+                imageUrl = event.img1,
+            )
+        )
+        list.add(
+            CarouselItem(
+                imageUrl = event.img2,
+            )
+        )
+// Image URL with header
+        val headers = mutableMapOf<String, String>()
+        headers["header_key"] = "header_value"
+
+        list.add(
+            CarouselItem(
+                imageUrl = event.img3,
+                headers = headers
+            )
+        )
+        list.add(
+            CarouselItem(
+                imageUrl = event.img4,
+                headers = headers
+            )
+        )
+        binding.carousel.setData(list)
     }
 
     private fun showSnack(s: String) {
