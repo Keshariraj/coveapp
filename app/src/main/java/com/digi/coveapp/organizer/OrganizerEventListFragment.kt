@@ -6,14 +6,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.digi.coveapp.R
 import com.digi.coveapp.adapters.EventStaffAdapter
 import com.digi.coveapp.databinding.FragmentFirstBinding
 import com.digi.coveapp.listener.OnEventItemClickListener
-import com.digi.coveapp.listener.OnEventItemLongClickListener
 import com.digi.coveapp.models.Event
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.ktx.auth
@@ -22,8 +20,7 @@ import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
 
 
-class OrganizerEventListFragment : androidx.fragment.app.Fragment(), OnEventItemClickListener,
-    OnEventItemLongClickListener {
+class OrganizerEventListFragment : androidx.fragment.app.Fragment(), OnEventItemClickListener {
 
     private var _binding: FragmentFirstBinding? = null
     private val binding get() = _binding!!
@@ -50,7 +47,6 @@ class OrganizerEventListFragment : androidx.fragment.app.Fragment(), OnEventItem
             adapter = EventStaffAdapter(
                 eventList,
                 this@OrganizerEventListFragment,
-                this@OrganizerEventListFragment
             )
         }
         loadEvents()
@@ -86,15 +82,12 @@ class OrganizerEventListFragment : androidx.fragment.app.Fragment(), OnEventItem
         _binding = null
     }
 
-
-
-    override fun onEventLongCLick(view: View, event: Event) {
+    override fun onEventClick(view: View, event: Event) {
         AlertDialog.Builder(requireContext())
             .setTitle("Delete Event")
             .setMessage("Are you sure you want to delete this event?")
             .setPositiveButton("Yes") { dialog, which ->
-                db.collection("events").whereEqualTo("name", event.eventName)
-                    .whereEqualTo("uid", event.uid).get()
+                db.collection("events").whereEqualTo("eventName", event.eventName).get()
                     .addOnSuccessListener {
                         if (it.size() > 0) {
                             val eventId = it.documents[0].id
@@ -106,6 +99,8 @@ class OrganizerEventListFragment : androidx.fragment.app.Fragment(), OnEventItem
                                 .addOnFailureListener { e ->
                                     showSnack(e.message.toString())
                                 }
+                        } else {
+                            showSnack("no items found")
                         }
                     }
                     .addOnFailureListener { e ->
@@ -116,10 +111,6 @@ class OrganizerEventListFragment : androidx.fragment.app.Fragment(), OnEventItem
                 showSnack("Event not Deleted")
             }
             .show()
-    }
-
-    override fun onEventClick(view: View, event: Event) {
-        showSnack("Long press to Delete this event")
     }
 
 

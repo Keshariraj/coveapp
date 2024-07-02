@@ -67,7 +67,7 @@ class EventDetalisFragment : Fragment() {
             showAlert("About the Event", event.summary)
         }
         binding.btnDateTime.text = event.date
-        binding.btnBuy.text = "Register For $${event.price}"
+        binding.btnBuy.text = "Register For ₹${event.price}"
         binding.btnBuy.setOnClickListener {
             findNavController().navigate(
                 EventDetalisFragmentDirections.actionEventDetalisToBuyTicketFragment(

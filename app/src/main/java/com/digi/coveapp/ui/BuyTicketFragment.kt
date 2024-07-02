@@ -75,7 +75,7 @@ class BuyTicketFragment : Fragment() {
         val uri: Uri = Uri.Builder()
             .scheme("upi")
             .authority("pay")
-            .appendQueryParameter("pa", "xaidmetamorphos@oksbi")
+            .appendQueryParameter("pa", "keshariraj01@okhdfcbank")
             .appendQueryParameter("pn", "Cove App")
             .appendQueryParameter("mc", "your-merchant-code")
             .appendQueryParameter("tr", "your-transaction-ref-id")

@@ -10,13 +10,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.digi.coveapp.R
 import com.digi.coveapp.listener.OnEventItemClickListener
-import com.digi.coveapp.listener.OnEventItemLongClickListener
 import com.digi.coveapp.models.Event
 
 class EventStaffAdapter(
     private val newList: ArrayList<Event>,
-    val listener: OnEventItemClickListener,
-    val listener2: OnEventItemLongClickListener
+    val listener: OnEventItemClickListener
 ) :
     RecyclerView.Adapter<EventStaffAdapter.MyViewHolder>() {
 
@@ -29,18 +27,15 @@ class EventStaffAdapter(
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
-        val currentItem:Event = newList[position]
+        val currentItem: Event = newList[position]
         holder.tvHeading.text = currentItem.eventName
         holder.tvLoc.text = currentItem.location
         Glide.with(holder.img).load(currentItem.banner).into(holder.img)
-        holder.container.tag = currentItem
-        holder.container.setOnClickListener {
-            val event:Event = it.tag as Event
+        holder.imgDelete.tag = currentItem
+
+        holder.imgDelete.setOnClickListener {
+            val event: Event = it.tag as Event
             listener.onEventClick(it, event)
-        }
-        holder.container.setOnClickListener {
-            val event:Event = it.tag as Event
-            listener2.onEventLongCLick(it,event)
         }
     }
 
@@ -56,6 +51,7 @@ class EventStaffAdapter(
         val tvLoc: TextView = itemView.findViewById(R.id.textLocation)
         val container:ViewGroup = itemView.findViewById(R.id.container)
         val img: ImageView = itemView.findViewById(R.id.imgBanner)
+        val imgDelete: ImageView = itemView.findViewById(R.id.imgDelete)
     }
 }
 

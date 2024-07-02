@@ -19,10 +19,10 @@
 
     <TextView
         android:id="@+id/tvHeading"
-        android:layout_width="272dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="32dp"
         android:fontFamily="serif"
         android:paddingTop="8dp"
@@ -33,7 +33,6 @@
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/title_image"
         app:layout_constraintTop_toTopOf="parent" />
 

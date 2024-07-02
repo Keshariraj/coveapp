@@ -15,33 +15,18 @@
 
 
         <TextView
-            android:id="@+id/eventName"
-            android:layout_width="365dp"
-            android:layout_height="123dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="36dp"
-            android:layout_marginEnd="30dp"
-            android:gravity="center"
-            android:maxLines="2"
-            android:textColor="#F0F4F6"
-            android:textSize="23dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nextButton"
-            tools:text="Sign in to like The New Events" />
-
-        <TextView
             android:id="@+id/signin_textview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="136dp"
+            android:layout_width="117dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="104dp"
+            android:fontFamily="@font/roboto"
             android:text="Sign In"
+            android:textAlignment="center"
             android:textColor="#1086E4"
-            android:textSize="48dp"
+            android:textSize="30dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_bias="0.408"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -49,14 +34,16 @@
             android:id="@+id/emailTextField"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="61dp"
             android:layout_margin="16dp"
-            android:layout_marginTop="16dp"
-            android:textColorHint="@color/white"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
             android:hint="Email"
+            android:textColorHint="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@id/signin_textview"
-            app:layout_constraintTop_toBottomOf="@id/signin_textview">
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signin_textview">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editEmail"
@@ -71,9 +58,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:textColorHint="@color/white"
             android:layout_marginTop="8dp"
             android:hint="Password"
+            android:textColorHint="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@id/signin_textview"
             app:layout_constraintTop_toBottomOf="@id/emailTextField">
@@ -88,11 +75,11 @@
         <Button
             android:id="@+id/nextButton"
             style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="209dp"
-            android:layout_height="63dp"
+            android:layout_width="146dp"
+            android:layout_height="64dp"
             android:layout_marginTop="24dp"
             android:backgroundTint="#045EA6"
-            android:fontFamily="serif"
+            android:fontFamily="@font/roboto"
             android:gravity="center"
             android:text="NEXT"
             android:textColor="@color/white"
@@ -105,8 +92,8 @@
 
         <TextView
             android:id="@+id/donthaveaccount"
-            android:layout_width="105dp"
-            android:layout_height="32dp"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
             android:layout_margin="16dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="12dp"
@@ -122,8 +109,8 @@
 
         <TextView
             android:id="@+id/signup_textview"
-            android:layout_width="83dp"
-            android:layout_height="25dp"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
             android:layout_margin="16dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -134,6 +121,26 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/donthaveaccount"
             app:layout_constraintTop_toBottomOf="@+id/nextButton" />
+
+        <TextView
+            android:id="@+id/eventName"
+            android:layout_width="0dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="Sign in to like The New Events"
+            android:textColor="#F0F4F6"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/donthaveaccount" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

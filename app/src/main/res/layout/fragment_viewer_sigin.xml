@@ -4,7 +4,7 @@
     android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background1">
+    android:background="@drawable/bg2">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/phoneNumberTextField"
@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         android:hint="Mobile"
+        android:textColorHint="#0C0C0C"
         app:errorEnabled="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,7 +28,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="phone"
-            android:tag="+91" />
+            android:tag="+91"
+            android:textColor="#070606" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -36,8 +38,8 @@
         android:layout_width="155dp"
         android:layout_height="52dp"
         android:layout_marginTop="56dp"
-        android:backgroundTint="#F3BE35"
-        android:fontFamily="serif"
+        android:backgroundTint="#2196F3"
+        android:fontFamily="@font/roboto"
         android:text="GET OTP"
         android:textAlignment="center"
         android:textColor="#0B0909"
@@ -64,7 +66,9 @@
         android:layout_width="wrap_content"
         android:layout_height="37dp"
         android:layout_marginTop="36dp"
+        android:fontFamily="@font/roboto"
         android:text="OTP Verification"
+        android:textColor="#070505"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,6 +79,7 @@
         android:layout_width="wrap_content"
         android:layout_height="49dp"
         android:layout_marginTop="32dp"
+        android:fontFamily="@font/roboto"
         android:gravity="center"
         android:text="we will send you an one time otpon this given mobile number"
         android:textColor="@color/black"

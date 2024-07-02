@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradiant"
+    android:background="@drawable/bg4"
     tools:context=".ui.ReviewFragment">
 
     <TextView
@@ -18,6 +18,7 @@
         android:text="Review this Conference"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#0E0C0C"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -45,7 +46,7 @@
         android:layout_marginBottom="16dp"
         android:clickable="true"
         android:src="@drawable/otpicon"
-        app:backgroundTint="#E88982"
+        app:backgroundTint="#66AFEA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:rippleColor="#EFEBEB" />
@@ -57,7 +58,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:background="@android:drawable/title_bar"
+        android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
         android:ems="10"
         android:gravity="top|left"
         android:inputType="textLongMessage|textCapSentences"
@@ -79,6 +80,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:background="#9791BDDF"
         android:indeterminate="false"
         android:max="5"
         android:numStars="5"

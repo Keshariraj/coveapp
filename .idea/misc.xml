@@ -44,19 +44,21 @@
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/drawable/background2.xml" value="0.25" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/drawable/gradiant.xml" value="0.2265" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/drawable/ic_account_circle_grey.xml" value="0.2595" />
+        <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.25" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/drawable/ic_baseline_people_outline_24.xml" value="0.2135" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.2135" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/drawable/ic_baseline_person_pinnn_24.xml" value="0.2135" />
+        <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/drawable/ic_baseline_snippet_folder_24.xml" value="0.25" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/drawable/ic_menu_camera.xml" value="0.2265" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/drawable/person.xml" value="0.2265" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/drawable/scrim_shape.xml" value="0.2135" />
-        <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/about_event.xml" value="0.20425724637681159" />
+        <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/about_event.xml" value="0.2" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/activity_auth.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/activity_main.xml" value="0.2115036231884058" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/activity_organizer.xml" value="0.20425724637681159" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/activity_phone_number.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/card_event_viewer.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/card_staff_event.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/card_staff_event.xml" value="0.264" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/card_viewer_staff.xml" value="0.253125" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/content_organizer.xml" value="0.20425724637681159" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/event.xml" value="0.536" />
@@ -74,12 +76,12 @@
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_eventdetails1.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_first.xml" value="0.264" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_home.xml" value="0.20425724637681159" />
-        <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_notifications.xml" value="0.20425724637681159" />
+        <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_notifications.xml" value="0.264" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_organiser_register.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_organiser_sigin.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_otp_verification.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_review.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_second.xml" value="0.264" />
+        <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_second.xml" value="0.1" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_splash.xml" value="0.264" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_user__event_view.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/layout/fragment_viewer_profile.xml" value="0.2" />
@@ -99,6 +101,7 @@
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/menu/bottom_nav1.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/menu/menu_staff.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/menu/nav_menu1.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/priyanshu/AndroidStudioProjects/coveapp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.25" />
       </map>

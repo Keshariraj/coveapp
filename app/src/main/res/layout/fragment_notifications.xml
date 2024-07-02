@@ -4,37 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradiant"
+    android:background="@drawable/bg4"
     tools:context=".ui.notifications.NotificationsFragment">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView12"
-        android:layout_width="161dp"
-        android:layout_height="144dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="48dp"
-        app:cardCornerRadius="50dp"
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="307dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/imgw"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="172dp"
-            android:layout_height="144dp"
-            android:layout_gravity="center"
-            android:src="@drawable/covelogo" />
-    </androidx.cardview.widget.CardView>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView17"
-        android:layout_width="0dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
-        android:text="Thanks For Using Cove "
+        android:layout_width="326dp"
+        android:layout_height="399dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/roboto"
+        android:text="We want to facilitate that by helping you find premier academic workshops, and seminars. Networking with your peers, joining group discussions, presenting your latest findings and addressing common challenges will allow you to remain at the top of your field. "
         android:textAlignment="center"
         android:textColor="#040404"
         android:textSize="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView12" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView8">
+
+    </TextView>
 </androidx.constraintlayout.widget.ConstraintLayout>
